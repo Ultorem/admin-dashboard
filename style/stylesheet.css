@@ -46,10 +46,10 @@ body {
 
 .content-container {
     display: grid;
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto auto auto auto;
     grid-row: 1;
     background-color: #634b64;
-    max-height: 100vh;
+    max-height: 150vh;
     flex: 4;
 }
 
@@ -152,15 +152,13 @@ body {
 
 .content-container {
     box-shadow: 0 0 10px 10px #9c378c;
-    grid-template-columns: auto;
-    grid-template-areas: "header" "main" "footer";
+    grid-template-areas: "header" "main";
     column-gap: 10px;
 }
 
 .gridContent{
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-areas: "header" "main" "footer";
     column-gap: 10px;
 }
 
@@ -177,7 +175,6 @@ body {
     height: 120px;
     width: 250px;
     margin: 20px;
-    background-color: #7a117a;
     border-radius: 5px;
 }
 
@@ -186,6 +183,7 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     color: #d4c6da;
+    background-color: #7a117a;
 }
 
 .graph {
@@ -208,4 +206,45 @@ body {
 .chartStats {
     display: grid;
     grid-template-rows: auto auto auto auto;
+}
+
+
+
+.chartStatsContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-column: 1 /-1;
+    grid-row: 1 /-1;
+    padding: 0 10px;
+    padding-left: 20px;
+    height: 100%;
+}
+
+.overviewToDo {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-column: 1 /-1;
+    grid-row: 1 /-1;
+    padding: 0 10px;
+    padding-left: 20px;
+    height: 100%;
+}
+
+
+.gridContentBottom{
+    display: grid;
+    grid-template-rows: auto ;
+}
+
+.toDoTask:hover {
+    box-shadow: 0 0 10px 10px #9c378c;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #d4c6da;
+    background-color: #7a117a;
+    cursor: crosshair;
+    border-radius: 10px;
+
 }
